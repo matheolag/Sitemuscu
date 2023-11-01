@@ -1,0 +1,51 @@
+.body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+    text-align: center;
+    background-color: #778899	;
+    color: #fff;
+    padding: 20px;
+}
+h1 {
+    font-size: 45px;
+    
+}
+.section {
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.section-title {
+    font-weight: bold;
+    font-size: 28px;
+    color:  #7FFFD4		;
+}
+.section-content {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+
+div {
+
+    background-image: url("paysage.png");
+}
