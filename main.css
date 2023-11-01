@@ -2,8 +2,14 @@
     padding: 147px;
     
 }
+ ul {
 
-a {
-    text-decoration: none;
-    display: flex;
+     list-style: none;
+     margin-left: 0;
+     padding-left: 0;
+
+ }
+
+ h2 {
+     font-size: 30px;
 }
