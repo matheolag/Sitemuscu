@@ -29,38 +29,41 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Dropdown
+                Dérouler
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="formulaire.html">Formulaire</a></li>
+                <li><a class="dropdown-item" href="cv.html">Mon Cv</a></li>
+                <li><a class="dropdown-item" href="cvanglais.html">Mon Cv en anglais</a></li>
+                <li><a class="dropdown-item" href="debutant.html">Programme débutant</a></li>
+                <li><a class="dropdown-item" href="intermediaire.html">Programme intermediaire</a></li>
+                <li><a class="dropdown-item" href="expert.html">Programme expert</a></li>
+                <li><a class="dropdown-item" href="expert.html">Images</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-outline-success" type="submit">Chercher</button>
           </form>
         </div>
       </div>
     </nav>
 
+
     <main>
-      <p class="fw-light text-white display-1 border-bottom border-secondary border-white border-3"><strong>La volonté ne
+      <p class="fw-light text-white display-1 border-bottom border-secondary border-white border-3 user-select-none">
+        <strong>La volonté ne
           suffit
           pas, il faut
           savoir agir</p>
@@ -73,10 +76,10 @@
   <div class="bg-info ">
     
      
-      <h1 class="text-white display-4 "><span class="fw-light ">Mes Programmes</span></h1>
+      <h1 class="text-white display-4 "><span class="fw-light user-select-none">Mes Programmes</span></h1>
       <p>
           <ul style="list-style-type: none ;">
-          <li> <a class="text-decoration-none fw-light lead shadow-lg" href="debutant.html"> Programme debutant</a></li>
+          <li> <a class="text-decoration-none fw-light lead shadow-lg " href="debutant.html"> Programme debutant</a></li>
           <li> <a class="text-decoration-none fw-light lead shadow-lg" href="intermediaire.html">Programme intermediaire</a></li>
           <li> <a class="text-decoration-none fw-light lead shadow-lg" href="expert.html">Programme expert</a></li>
           <div class="imagesmuscu position-absolute">
@@ -87,13 +90,21 @@
           <style type="text/css">
             .imagesmuscu {
               left: 152px;
-              top: 1600px
+              top: 1615px
             }
           </style>
           </li>
         </ul>
       </p>
+      <div class="text position-absolute">
       <p class="float-end display-5 text-white fst-italic ">motivation discipline... </p>
+      <style type="text/css">
+        .text {
+          top: 1600px;
+          right: 150px;
+        }
+      </style>
+      </div>
       
       <div class="video position-absolute mx-5  ">
         <iframe width="130%" height="215"
@@ -102,8 +113,8 @@
         allowfullscreen></iframe>
         <style type="text/css">
           .video {       
-            top:  1315px;
-            left: 1918px;
+            top:  1365px;
+            left: 1718px;
           }
         </style>
         </div>
@@ -137,10 +148,11 @@
   </div>
 </div>
 <div class="cv position-relative ">
-  <h2><a class="text-white mx-4 text-decoration-none fw-light float-end " href="cv.html"> CV en français
+  <h2><a class="text-white mx-4 text-decoration-none fw-light float-end user-select-none" href="cv.html"> CV en français
     </a></h2>
       </p>
-      <h2><a class="text-white mx-4 text-decoration-none fw-light float-end" href=cvanglais.html> CV en anglais </a></h2>
+      <h2><a class="text-white mx-4 text-decoration-none fw-light float-end user-select-none" href=cvanglais.html> CV en
+          anglais </a></h2>
     </h2>
     <style type="text/css">
       .cv {
@@ -150,8 +162,13 @@
       }
     </style>
 </div>
-  <h3 class="text-white  mx-5 fw-light border-bottom border-secondary "><strong>Mes contacts</strong></h3>
+  <h3 class="text-white  mx-5 fw-light border-bottom border-secondary user-select-none"><strong><span></span
+        class="contact">Mes
+      contacts</span></strong></h3>
   <p>
+    <style type="text/css">
+    
+    </style>
   <ul style="list-style-type: none ">
     <li class="text-white fw-light mx-5 ">mail : matheo.lagache22@gmail.com</li>
     <li class="text-white fw-light mx-5 ">numero pro: 0638875239</li>

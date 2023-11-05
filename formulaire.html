@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulaire d'Inscription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+            max-width: 400px;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h1 {
+            color: rgb(25, 19, 19);
+            padding-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .radio-label {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .radio-label:hover {
+            background-color: #f0f0f0;
+        }
+
+        .radio-label.selected {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .error-message {
+            color: #ff0000;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <h1>Inscription</h1>
+        <label for="nom_prenom">Nom et Prénom :</label>
+        <input type="text" id="nom_prenom" name="nom_prenom" required>
+
+        <label for="age">Âge :</label>
+        <input type="number" id="age" name="age" required>
+
+        <label>Sexe :</label>
+        <div class="radio-label" onclick="selectRadio(this)">
+            <input type="radio" id="homme" name="sexe" value="homme" required>
+            Homme
+        </div>
+        <div class="radio-label" onclick="selectRadio(this)">
+            <input type="radio" id="femme" name="sexe" value="femme" required>
+            Femme
+        </div>
+
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" required>
+
+        <input type="submit" value="S'Inscrire">
+
+        <p class="error-message" id="error-message" style="display: none;">Veuillez remplir tous les champs
+            obligatoires.</p>
+    </form>
+
+    <script>
+        function selectRadio(element) {
+            const radios = document.querySelectorAll('input[type="radio"]');
+            radios.forEach(radio => radio.parentElement.classList.remove('selected'));
+            element.children[0].checked = true;
+            element.classList.add('selected');
+        }
+
+        const form = document.querySelector('form');
+        const errorMessage = document.querySelector('#error-message');
+
+        form.addEventListener('submit', (event) => {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                errorMessage.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>
